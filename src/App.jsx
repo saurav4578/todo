@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   const [todo, settodo] = useState([
-    "Buy groceries",
+    "Let's crack",
     "Complete project",
     "Go for a walk"
   ])
@@ -131,6 +131,35 @@ function App() {
           <p className="task-count">
             {todo.length} {todo.length === 1 ? 'task' : 'tasks'} remaining
           </p>
+        </div>
+
+        {/* Contact Section */}
+        <div className="contact-section">
+          <h3 className="contact-title">📞 Contact Us</h3>
+          <div className="contact-info">
+            <a href="mailto:sauravuseidevery@gmail.com" className="contact-link">
+              <span className="icon">📧</span>
+              <span>sauravuseidevery@gmail.com</span>
+            </a>
+          </div>
+          
+        </div>
+
+        {/* Copyright Section */}
+        <div className="copyright-section">
+          <p className="copyright-text">
+            © 2024 Todo App. All rights reserved.
+          </p>
+          <p className="made-with">
+            Made with <span className="heart">❤️</span> Saurav☺️
+          </p>
+          <div className="legal-links">
+            <a href="#privacy" className="legal-link">Privacy Policy</a>
+            <span className="separator">•</span>
+            <a href="#terms" className="legal-link">Terms of Service</a>
+            <span className="separator">•</span>
+            <a href="#cookie" className="legal-link">Cookie Policy</a>
+          </div>
         </div>
       </div>
     </div>
